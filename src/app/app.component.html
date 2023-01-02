@@ -1,0 +1,7 @@
+<div class="flex flex-row gap-4 p-6 flex-wrap">
+  <app-card *ngFor="let post of posts; let index = index;"
+            (buttonClick)="cardButtonClick($event)"
+            [title]="post.title"
+            [index]="index"
+            [description]="post.body"></app-card>
+</div>
